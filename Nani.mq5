@@ -59,7 +59,7 @@ input group "Cluster / Basket"
 input double InpInitialLot          = 0.01;  // Lot size per position in a block
 input int    InpMaxBlockCount       = 3;     // Positions per cluster block
 input double InpTargetProfitPercent = 0.07;  // Basket close target, % of balance
-input double InpBasketLossPercent   = 1.0;   // Basket stop-loss, % of balance (0 = disabled)
+input double InpBasketLossPercent   = 1.5;   // Basket stop-loss, % of balance (0 = disabled)
 input ulong  InpMagicNumber         = 194726; // "Nani" on a phone keypad-ish magic, just needs to be unique
 
 //================== GLOBALS ==================

@@ -43,6 +43,13 @@ performed *better* than the first, which is a reasonable (not conclusive) sign a
 overfitting. This is backtest evidence on historical data, not a live track record, and should
 be treated accordingly (see **Risk Disclosure** below).
 
+> **Note on the table above:** those numbers were produced with `InpBasketLossPercent = 1.0`.
+> The version in this repo ships with a looser default (`1.5`) so it's a safe, honestly-labeled
+> starting point rather than a silent copy of the exact validated config — see
+> **Default parameters** below for what changes and by how much. Running the backtest yourself
+> against this repo's shipped defaults will not reproduce the table above; it reproduces a
+> real, still-profitable, but weaker result (roughly +3.5% vs +7.55% over the same H1 period).
+
 ## Default parameters
 
 | Group | Parameter | Default | Meaning |
@@ -53,7 +60,7 @@ be treated accordingly (see **Risk Disclosure** below).
 | Cluster | `InpInitialLot` | 0.01 | Lot size per position in a block |
 | Cluster | `InpMaxBlockCount` | 3 | Positions per block (6 total if block 2 fires) |
 | Exit | `InpTargetProfitPercent` | 0.07% | Basket closes at this % of account balance |
-| Exit | `InpBasketLossPercent` | 1.0% | Basket-wide stop-loss, % of account balance |
+| Exit | `InpBasketLossPercent` | 1.5% | Basket-wide stop-loss, % of account balance (looser than the validated 1.0% -- see note above) |
 
 ## ⚠️ Risk Disclosure
 
