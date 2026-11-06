@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/nani_banner.jpg" alt="Nani" width="600" />
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,6&height=200&section=header&text=Nani&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=SAR-Directed%20Cluster%20EA%20for%20MetaTrader%205&descAlignY=58&descSize=20" />
 
 ![MQL5](https://img.shields.io/badge/MQL5-MetaTrader%205-0b5ed7?style=for-the-badge&logo=metatrader&logoColor=white)
